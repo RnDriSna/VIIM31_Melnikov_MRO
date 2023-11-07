@@ -42,8 +42,8 @@ try:
             counter += 1
 
 except FileNotFoundError:
-    print('File not found! Manual data input...\n')
-    counter = int(input('Class quantity = '))
+    print('No file, manual mode\n')
+    counter = int(input('Number of classes = '))
     for i in range(counter):
         print('Class ', str(i+1), '\n')
         x = float(input('x = '))
